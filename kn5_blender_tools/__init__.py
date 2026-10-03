@@ -3,7 +3,7 @@
 bl_info = {
     "name": "KN5 Blender Tools",
     "author": "KN5 Importer contributors",
-    "version": (2, 0, 1),
+    "version": (2, 0, 2),
     "blender": (5, 0, 0),
     "location": "File > Import > Assetto Corsa",
     "description": "Import Assetto Corsa KN5 files, car folders, skins and tracks",

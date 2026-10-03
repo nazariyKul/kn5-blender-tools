@@ -21,7 +21,7 @@ def main():
     expected = {
         "schema_version": "1.0.0", "id": "kn5_blender_tools",
         "name": "KN5 Blender Tools", "type": "add-on",
-        "blender_version_min": "5.0.0", "license": ["SPDX:MIT"],
+        "blender_version_min": "5.0.0", "license": ["SPDX:GPL-3.0-or-later"],
     }
     for key, value in expected.items():
         if manifest.get(key) != value:
@@ -33,8 +33,8 @@ def main():
         raise ValueError("Maintainer and a tagline of at most 64 characters are required")
     if manifest.get("tags") != ["Import-Export"]:
         raise ValueError("Unexpected extension tags")
-    if not 1 <= len(manifest.get("permissions", {}).get("files", "")) <= 128:
-        raise ValueError("The files permission needs a concise reason")
+    if not 1 <= len(manifest.get("permissions", {}).get("files", "")) <= 64:
+        raise ValueError("The files permission needs a reason of at most 64 characters")
 
     tree = ast.parse((PACKAGE / "__init__.py").read_text(encoding="utf-8"))
     info = next(ast.literal_eval(node.value) for node in tree.body
@@ -51,6 +51,7 @@ def main():
 
     files = {name: PACKAGE / name for name in MODULES}
     files.update({"blender_manifest.toml": manifest_path, "LICENSE": ROOT / "LICENSE",
+                  "LICENSES/MIT.txt": ROOT / "LICENSES" / "MIT.txt",
                   "THIRD_PARTY_NOTICES.md": ROOT / "THIRD_PARTY_NOTICES.md"})
     for name, path in files.items():
         text = path.read_text(encoding="utf-8")

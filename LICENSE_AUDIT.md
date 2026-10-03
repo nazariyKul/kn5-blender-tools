@@ -1,10 +1,12 @@
 # License and provenance audit
 
-Reviewed on 2026-10-03 for the first public release of KN5 Blender Tools, version 2.0.1.
+Reviewed on 2026-10-03 for version 2.0.1, with distribution licensing updated for version 2.0.2.
 
 ## Decision
 
-Preserve the existing MIT license and its `Copyright (c) 2026 KN5 Importer contributors` notice. The extension declares `SPDX:MIT`. No new license is assigned to reference-project code or game assets.
+Distribute version 2.0.2 under the GNU General Public License, version 3 or (at the recipient's option) any later version. The extension declares `SPDX:GPL-3.0-or-later`. LICENSE contains the explicit grant and full GPLv3 text. This corrects the addon's Blender Extensions licensing requirement; the initial 2.0.1 manifest's MIT declaration did not satisfy that requirement.
+
+The existing MIT terms permit sublicensing and distribution subject to preserving their copyright and permission notice. The complete original MIT LICENSE is preserved byte-for-byte in LICENSES/MIT.txt and included in the installation ZIP. The existing `Copyright (c) 2026 KN5 Importer contributors` attribution is unchanged. Earlier MIT grants, including version 2.0.1, are not revoked. No new license is assigned to reference-project code or game assets, and no third-party ownership is claimed.
 
 The owner explicitly confirmed during release preparation: “Only format facts were used; no code copied, translated, or adapted.” The reviewed code and existing provenance statements support that account. No unresolved licensing publication blocker was identified on this basis. This is a source/provenance review, not a legal opinion or a guarantee about undocumented history.
 
@@ -23,7 +25,7 @@ GitHub metadata and complete source trees were checked for MarvinSt/kn5-obj-conv
 
 The previous reliability investigation also cited AcTools for visibility/renderability field meanings. AcTools declares MS-PL in `LICENSE.txt`. No AcTools source was identified in the addon. If its code were incorporated later, its license would need to be evaluated: MS-PL requires retaining applicable notices, and distribution of covered source must use that license. No such source is included in this release.
 
-On the confirmed facts-only reference use, no upstream code-license obligations were identified for the current addon. References are acknowledged in THIRD_PARTY_NOTICES.md. MIT requires preserving the addon's copyright and permission notice in copies or substantial portions; the installation ZIP includes LICENSE.
+On the confirmed facts-only reference use, no upstream code-license obligations were identified for the current addon. References remain acknowledged in THIRD_PARTY_NOTICES.md. The installation ZIP includes the GPL LICENSE and the original MIT copyright and permission notice in LICENSES/MIT.txt. Distribution of this GPL-covered version must comply with GPL-3.0-or-later, including its corresponding-source obligations; the matching source is published in this repository. Preserve the original MIT notice in copies or substantial portions as its terms require.
 
 ## Distribution boundary
 

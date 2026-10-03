@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.2 — Extension manifest correction
+
+- Distribute this version under GPL-3.0-or-later and declare `SPDX:GPL-3.0-or-later` in the Blender manifest.
+- Preserve the original MIT copyright and permission notice in `LICENSES/MIT.txt`, including it in the installation ZIP alongside the GPL license and existing reference acknowledgments.
+- Shorten the file-access permission reason to fit Blender's 64-character limit, and enforce that limit in the release builder.
+- Synchronize addon, manifest and release metadata at 2.0.2. Runtime addon behavior is unchanged.
+
 ## 2.0.1 — First public pre-release
 
 This release retains the version already used by the development addon. It packages the existing implementation as KN5 Blender Tools; it does not introduce new import features.

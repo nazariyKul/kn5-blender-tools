@@ -1,5 +1,7 @@
 # Third-party notices
 
+Version 2.0.2 is distributed under GPL-3.0-or-later; see LICENSE. The existing `Copyright (c) 2026 KN5 Importer contributors` and complete original MIT permission notice are preserved in LICENSES/MIT.txt and included in the installation ZIP. The earlier MIT grants, including those for version 2.0.1, remain valid. This distribution licensing change does not claim ownership of any third-party code or assets and does not change the licenses of the reference projects below.
+
 KN5 Blender Tools does not include or execute either converter below. They were consulted for KN5 file-format facts. The project owner confirmed that no converter code was copied, translated or adapted into this addon.
 
 - [MarvinSt/kn5-obj-converter](https://github.com/MarvinSt/kn5-obj-converter), reference revision `5de5ccdb0a7ade3a8dac8583d4558397b3045b14`. Its README credits RaduMC's converter. No license file or explicit code-use grant was found in this revision. Public availability does not grant permission to reuse its code.

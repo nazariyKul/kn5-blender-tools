@@ -15,7 +15,7 @@ Import and work with Assetto Corsa KN5 cars and tracks directly in Blender. A fr
 
 ## Installation
 
-1. Download `kn5_blender_tools-2.0.1.zip` from this repository's **Releases** page. Use the attached addon ZIP, not GitHub's generated source-code ZIP.
+1. Download `kn5_blender_tools-2.0.2.zip` from this repository's **Releases** page. Use the attached addon ZIP, not GitHub's generated source-code ZIP.
 2. In Blender 5.0, open **Edit > Preferences > Get Extensions**.
 3. Open the menu in the upper-right corner and select **Install from Disk**. Choose the downloaded ZIP.
 4. Enable **KN5 Blender Tools** if Blender does not enable it automatically. It also appears in the **Add-ons** preferences.
@@ -56,7 +56,7 @@ The sidebar also provides **Organize Imported KN5** and hierarchy visibility con
 
 The current development and testing target is **Blender 5.0**. Earlier development checks used Blender 5.0.0. The manifest requires Blender 5.0.0 or newer; compatibility with later 5.x versions has not yet been validated.
 
-Version 2.0.1 preserves the existing development version for this first public pre-release. Final installation and import checks for the extension ZIP are still pending manual testing in Blender.
+Version 2.0.2 corrects extension licensing and manifest validation for the public pre-release. Final installation and import checks for the extension ZIP are still pending manual testing in Blender.
 
 ## Bug reports
 
@@ -76,7 +76,7 @@ KN5 Blender Tools is free and open source. If it saves you time and you would li
 
 ## License
 
-The addon is licensed under the [MIT License](LICENSE). The existing license and copyright notice are preserved. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for format references and [LICENSE_AUDIT.md](LICENSE_AUDIT.md) for the provenance review.
+Version 2.0.2 and later are distributed under the [GNU General Public License, version 3 or later](LICENSE), as required for this Blender extension. The original copyright and MIT permission notice remain in [LICENSES/MIT.txt](LICENSES/MIT.txt) and are included in the installation ZIP. Earlier releases, including 2.0.1, retain their MIT license grants. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for format references and [LICENSE_AUDIT.md](LICENSE_AUDIT.md) for the provenance and licensing review.
 
 ## Disclaimer
 
