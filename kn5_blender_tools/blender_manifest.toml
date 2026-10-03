@@ -1,0 +1,13 @@
+schema_version = "1.0.0"
+id = "kn5_blender_tools"
+version = "2.0.1"
+name = "KN5 Blender Tools"
+tagline = "Import Assetto Corsa KN5 cars and tracks directly in Blender"
+maintainer = "KN5 Importer contributors"
+type = "add-on"
+tags = ["Import-Export"]
+blender_version_min = "5.0.0"
+license = ["SPDX:MIT"]
+
+[permissions]
+files = "Read KN5 files, car and track folders, skins and textures; extract embedded textures to temporary files"

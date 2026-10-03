@@ -1,0 +1,26 @@
+name: Feature request
+description: Describe a problem and the behavior that would help
+title: "[Request] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not upload copyrighted game or mod content publicly. Examples must be synthetic or have clear redistribution permission.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What are you trying to do, and what gets in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_behavior
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples or context
+      description: Include relevant workflows, screenshots you may share, or links.

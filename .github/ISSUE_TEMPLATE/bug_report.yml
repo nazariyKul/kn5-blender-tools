@@ -1,0 +1,66 @@
+name: Bug report
+description: Report an import or addon problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Include enough detail to reproduce the problem. Do not upload copyrighted KN5 files, cars, tracks, skins or textures publicly. Use synthetic examples or content you may legally redistribute. Remove personal paths and credentials from logs.
+  - type: input
+    id: addon_version
+    attributes:
+      label: Addon version
+      placeholder: "2.0.1"
+    validations:
+      required: true
+  - type: input
+    id: blender_version
+    attributes:
+      label: Blender version
+      placeholder: "5.0.0"
+    validations:
+      required: true
+  - type: input
+    id: operating_system
+    attributes:
+      label: Operating system
+      placeholder: OS name and version
+    validations:
+      required: true
+  - type: dropdown
+    id: import_type
+    attributes:
+      label: Import type
+      options:
+        - Single KN5 file
+        - Car folder
+        - Track folder
+        - Skin switching or reload
+        - Installation or other
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include the relevant import options and whether the asset is a car or track.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Error, traceback or import warnings
+      description: Paste relevant text if available. Remove personal paths and credentials.
+      render: text
